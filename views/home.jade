@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  .row
+    each journal in journals
+      .col-sm-6
+        if journal.sub_name
+          h2=journal.name + ' : ' +  journal.sub_name
+        else
+          h2=journal.name
+        p=journal.blurb
+        p
+          a.btn.btn-default(href='#{journal.uri}', role='button') Visit Journal Home »
