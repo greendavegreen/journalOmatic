@@ -12,3 +12,4 @@ exports.index = (req, res) => {
     });
   });
 };
+  

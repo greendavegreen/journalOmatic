@@ -1,0 +1,122 @@
+@import "main.scss";
+
+.navbar-nav > li > a, .navbar-brand {
+  padding-top:5px !important; padding-bottom:0 !important;
+  line-height: 50px;
+  height: 60px;
+}
+.navbar {min-height:60px !important;}
+
+.lmodule {
+  font-family: $font-family-serif;
+  background:
+          linear-gradient(
+                          to left,
+                          rgba(0, 0, 0, 0),
+                          rgba(0, 0, 0, 0.6)
+          ),
+          url(/images/black-marble.jpg);
+  background-size: cover;
+  height: 600px;
+  color: white;
+
+  ul {
+    margin-left: -40px;
+    list-style-type:none
+  }
+}
+
+.rmodule {
+  height: 300px;
+
+  &.tr{
+
+    background:
+            linear-gradient(
+                            to bottom,
+                            rgba(0, 0, 0, 0),
+                            rgba(0, 0, 0, 0.3)
+            ),
+            url(/images/oil-gas.jpg);
+    background-size: cover;
+  }
+
+  &.tl{
+    background:
+            linear-gradient(
+                            to bottom,
+                            rgba(0, 0, 0, 0),
+                            rgba(0, 0, 0, 0.3)
+            ),
+            url(/images/collapse.jpg);
+    background-size: cover;
+  }
+
+  &.bot{
+    background:
+            linear-gradient(
+                            to bottom,
+                            rgba(0, 0, 0, 0),
+                            rgba(0, 0, 0, 0.3)
+            ),
+            url(/images/wind-cows.jpg);
+    background-size: cover;
+  }
+
+  div.title {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    margin: 0;
+    p.type {
+      font-family: 'Roboto', sans-serif;
+      font-size:80%;
+    }
+    p.title {
+      font-family: serif;
+      font-size: 140%;
+    }
+  }
+
+}
+
+
+.hvr-float {
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover,
+.hvr-float:focus,
+.hvr-float:active {
+  transform: translateX(10px);
+}
+
+.editor {
+  color: white;
+  margin-top: 25px;
+  line-height: 65%;
+  p.domain {
+    line-height: 80%;
+    font-size: 140%;
+  }
+  p.name {
+    font-weight: bold;
+    font-size: 80%;
+  }
+  p.org {
+    font-size: 80%;
+    font-style: italic;
+    font-weight: lighter;
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}
+

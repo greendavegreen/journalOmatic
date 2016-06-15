@@ -12,7 +12,7 @@ html
     meta(name="robots", content="noindex")
 
     link(rel='shortcut icon', href='/favicon.png')
-    link(rel='stylesheet', href='/css/main.css')
+    link(rel='stylesheet', href='/css/elementa.css')
 
   body
     body
@@ -20,7 +20,7 @@ html
 
     include partials/header
 
-    .container
+    .container-fluid
       include partials/flash
       block content
 
@@ -28,6 +28,7 @@ html
 
     script(src='/js/lib/jquery-2.2.0.min.js')
     script(src='/js/lib/bootstrap.min.js')
+    script(src='/js/lib/bootstrap-submenu.min.js')
     script(src='/js/main.js')
 
     // Google Analytics: change UA-XXXXX-X to be your site's ID

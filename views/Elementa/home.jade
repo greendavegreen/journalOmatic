@@ -1,13 +1,71 @@
 extends layout
 
 block content
+
   .row
-    each journal in journals
-      .col-sm-6
-        if journal.sub_name
-          h2=journal.name + ' : ' +  journal.sub_name
-        else
-          h2=journal.name
-        p=journal.blurb
-        p
-          a.btn.btn-default(href='#{journal.uri}', role='button') Visit Journal Home »
+    .col-md-4.lmodule
+      h3  A New Journal for a New Epoch.
+      p Elementa is an academic journal publishing original research in the following knowledge domains:
+      ul
+        li.hvr-float
+          a(href="#")
+            .editor
+              p.domain Atmospheric Science
+              p.name Detlev Helmig
+              p.org University of Colorado Boulder
+        li.hvr-float
+          a(href="#")
+            .editor
+              p.domain Earth & Environmental Science
+              p.name Joel D. Blum
+              p.org University of Michigan
+        li.hvr-float
+          a(href="#")
+            .editor
+              p.domain Ecology
+              p.name Donald R. Zak
+              p.org University of Michigan
+        li.hvr-float
+          a(href="#")
+            .editor
+              p.domain Ocean Science
+              p.name Jody Deming
+              p.org University of Washington
+        li.hvr-float
+          a(href="#")
+            .editor
+              p.domain Sustainable Engineering
+              p.name Michael E. Chang
+              p.org Georgia Institute of Technology
+        li.hvr-float
+          a(href="#")
+            .editor
+              p.domain Sustainability Transitions
+              p.name Anne R. Kapuscinski
+              p.org Dartmouth
+    .col-md-8
+      .row
+        .col-md-12
+          .row
+            .col-md-6.rmodule.tl
+              .title
+                p.type An Elementa Special Feature
+                p.title Avoiding Collapse
+            .col-md-6.rmodule.tr
+              .title
+                p.type An Elementa Forum
+                p.title Oil and Natural Gas Development: Air Quality, Climate Science, and Policy
+        .col-md-12.rmodule.bot
+          .title
+            p.type Video
+            p.title Wayne Clough on the Anthropocene and Engineering
+  .row.voffset
+    .col-md-1
+    .col-md-2
+      button.btn.btn-default.btn-block(type="button") View Articles
+    .col-md-2
+    .col-md-2
+      button.btn.btn-default.btn-block(type="button") View Special Features
+    .col-md-2
+    .col-md-2
+      button.btn.btn-default.btn-block(type="button") View Forums
