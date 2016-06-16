@@ -1,7 +1,8 @@
 @import "main.scss";
 
 .navbar-nav > li > a, .navbar-brand {
-  padding-top:5px !important; padding-bottom:0 !important;
+  padding-top:5px !important;
+  padding-bottom:0 !important;
   line-height: 50px;
   height: 60px;
 }
@@ -72,10 +73,13 @@
     p.type {
       font-family: 'Roboto', sans-serif;
       font-size:80%;
+      line-height: 25%;
     }
     p.title {
       font-family: serif;
-      font-size: 140%;
+      font-size: 200%;
+      line-height: 90%;
+      font-weight: light
     }
   }
 
@@ -120,3 +124,7 @@ a:hover {
   text-decoration: none;
 }
 
+
+.grback {
+   background-color: #000000;
+ }
